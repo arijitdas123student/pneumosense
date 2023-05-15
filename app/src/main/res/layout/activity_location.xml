@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="locationVM" type="com.arijitsapplication.app.modules.location.data.viewmodel.LocationVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameLocation"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnarrowleft"
+            android:layout_gravity="top|center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_17pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_width="@dimen/_10pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPleaseselecty"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.97"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_3pxh"
+                        android:singleLine="true"
+                        android:text="@{locationVM.locationModel.txtPleaseselecty}"
+                        style="@style/txtIntermedium14" tools:text="@string/msg_please_select_y"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStackmaps"
+                android:layout_height="@dimen/_670pxv"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_340pxh">
+                <ImageView android:id="@+id/imageMaps"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_maps"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_maps"/>
+                <LinearLayout
+                    android:id="@+id/linearColumnfortisescorts"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_17pxv"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_5">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFortisEscorts"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_25pxv"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:singleLine="true"
+                        android:text="@{locationVM.locationModel.txtFortisEscorts}"
+                        style="@style/txtInterbold16" tools:text="@string/msg_fortis_escorts2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtRohiniNewDel"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_2pxh"
+                        android:singleLine="true"
+                        android:text="@{locationVM.locationModel.txtRohiniNewDel}"
+                        style="@style/txtInterregular9_2" tools:text="@string/msg_rohini_new_del"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowlocation"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_red_400_6c_radius_8"
+                            android:id="@+id/btnLocation"
+                            android:layout_height="@dimen/_16pxh"
+                            android:layout_width="@dimen/_16pxh"
+                            android:paddingHorizontal="@dimen/_3pxh"
+                            android:paddingVertical="@dimen/_3pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_location_red_400" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtDistance"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginStart="@dimen/_4pxh"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:letterSpacing="0.0"
+                            android:lineSpacingExtra="@dimen/_2pxh"
+                            android:singleLine="true"
+                            android:text="@{locationVM.locationModel.txtDistance}"
+                            style="@style/txtInterregular9_2" tools:text="@string/lbl_1_2km_away"/>
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_green_500_6c_radius_8"
+                            android:id="@+id/btnClock"
+                            android:layout_height="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_24pxh"
+                            android:layout_width="@dimen/_16pxh"
+                            android:paddingHorizontal="@dimen/_4pxh"
+                            android:paddingVertical="@dimen/_4pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_clock" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txt24xSeven"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_marginStart="@dimen/_4pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_weight="0.13"
+                            android:layout_width="0dp"
+                            android:letterSpacing="0.0"
+                            android:lineSpacingExtra="@dimen/_2pxh"
+                            android:singleLine="true"
+                            android:text="@{locationVM.locationModel.txt24xSeven}"
+                            style="@style/txtInterregular9_2" tools:text="@string/lbl_24x7"/>
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_orange_a200_6c_radius_8"
+                            android:id="@+id/btnCar"
+                            android:layout_height="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_24pxh"
+                            android:layout_width="@dimen/_16pxh"
+                            android:paddingHorizontal="@dimen/_4pxh"
+                            android:paddingVertical="@dimen/_4pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_car_orange_a200" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtDuration"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_marginStart="@dimen/_4pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_weight="0.28"
+                            android:layout_width="0dp"
+                            android:letterSpacing="0.0"
+                            android:lineSpacingExtra="@dimen/_2pxh"
+                            android:singleLine="true"
+                            android:text="@{locationVM.locationModel.txtDuration}"
+                            style="@style/txtInterregular9_2" tools:text="@string/lbl_14_minutes"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnSaveAsLocalHospital"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_24pxv"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:paddingBottom="@dimen/_12pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:singleLine="true"
+                        android:text="@string/msg_save_as_local_h"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_2" tools:text="@string/msg_save_as_local_h"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

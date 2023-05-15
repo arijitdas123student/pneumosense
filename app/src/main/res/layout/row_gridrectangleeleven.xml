@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gridrectangleelevenRowModel" type="com.arijitsapplication.app.modules.uploadalbumview.data.model.GridrectangleelevenRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnrectangleeleven"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecornerRadius_7">
+        <ImageView android:id="@+id/imageRectangleEleven"
+            android:layout_height="@dimen/_162pxh"
+            android:layout_width="@dimen/_162pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_5pxh}"
+            imageRes="@{@drawable/img_rectangle8}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle8"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtRecents"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{gridrectangleelevenRowModel.txtRecents}"
+            style="@style/txtSFProTextregular16" tools:text="@string/lbl_recents"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOneHundred"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{gridrectangleelevenRowModel.txtOneHundred}"
+            style="@style/txtSFProTextregular16_1" tools:text="@string/lbl_100"/>
+    </LinearLayout>
+</layout>

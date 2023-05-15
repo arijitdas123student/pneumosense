@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">arijit_s_application</string>
+    <string name="loading">Loading?</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <!--TODO ENTER YOUR APP ID BELOW-->
+    <string name="facebook_app_id"/>
+    <!--TODO ENTER YOUR APP ID BELOW (eg: fb0123456789)-->
+    <string name="fb_login_protocol_scheme">fb</string>
+    <!--TODO ENTER YOUR Client Token BELOW-->
+    <string name="facebook_client_token"/>
+    <string name="lbl_usa">USA</string>
+    <string name="msg_save_as_local_h">Save as Local Hospital</string>
+    <string name="lbl_n">N</string>
+    <string name="lbl_add_bookmark">Add Bookmark</string>
+    <string name="lbl_no">No</string>
+    <string name="lbl_retake">Retake</string>
+    <string name="msg_ravi_gupta_re">Ravi Gupta - Report.pdf</string>
+    <string name="msg_general_pulmono">General Pulmonologist</string>
+    <string name="lbl4">&#x10018a;</string>
+    <string name="lbl_u">U</string>
+    <string name="lbl5">&#x100202;</string>
+    <string name="lbl2">&#x100148;</string>
+    <string name="lbl3">&#x100189;</string>
+    <string name="msg_you_have_a_good">You have a good heart!</string>
+    <string name="lbl_live_photos">Live photos</string>
+    <string name="msg_are_you_experie">Are you experiencing shortness of breath?</string>
+    <string name="lbl_scan_report">Scan Report</string>
+    <string name="msg_get_more_benefi">Get more benefits with our Protection program.</string>
+    <string name="msg_positive_sympto">Positive Symptoms: 
+</string>
+    <string name="lbl_mr_t_gupta">Mr. T. Gupta</string>
+    <string name="msg_unllimited_bene">Unllimited benefits without limitation.</string>
+    <string name="lbl_mr_ravi_gupta">Mr. Ravi Gupta</string>
+    <string name="lbl_first_last">First Last</string>
+    <string name="lbl_sign_in">Sign In</string>
+    <string name="msg_rohini_new_del">Rohini, New Delhi</string>
+    <string name="lbl_42_y"> 42 Y 
+</string>
+    <string name="lbl_my_albums">My Albums</string>
+    <string name="msg_insurance_prote">Insurance Protection</string>
+    <string name="lbl_us">US</string>
+    <string name="lbl_edit_actions">Edit Actions...</string>
+    <string name="msg_we_ensure_best">We ensure best insurance for our clients</string>
+    <string name="msg_we_ve_received">We\u2019ve received more than 4 true responses from your end &amp; would like you to proceed for the complete X-Ray scanning test.</string>
+    <string name="lbl_rajeev">Rajeev</string>
+    <string name="lbl_1_2km_away">1.2km away</string>
+    <string name="lbl_male"> Male
+
+</string>
+    <string name="lbl_12_10">12:10</string>
+    <string name="msg_are_you_having">Are you having Cough with release of greenish, yellow or bloody mucus?</string>
+    <string name="msg_forgot_password">Forgot password?</string>
+    <string name="lbl_start_from">Start from</string>
+    <string name="lbl_rs_799_00">Rs 799.00</string>
+    <string name="lbl_report">Report</string>
+    <string name="lbl_month">/ month</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="msg_fortis_escorts2">Fortis Escorts Hospital</string>
+    <string name="msg_bacterial_pneum">Bacterial Pneumonia (</string>
+    <string name="lbl_family">Family</string>
+    <string name="lbl_dr_m_kartick">Dr. M. Kartick</string>
+    <string name="lbl_speaker">Speaker</string>
+    <string name="msg_have_you_visite">Have you visited any country in recent time?</string>
+    <string name="msg_age_42_y_gend">Age: 42 Y 
+Gender: Male
+
+Report Diagnostics: 
+Bacterial Pneumonia (71%)</string>
+    <string name="msg_have_you_experi">Have you experienced fever in recent time or had shaking chills?</string>
+    <string name="msg_cough_fever_c">Cough, Fever, Chest Pain, Fatigue, Recent travel
+</string>
+    <string name="msg_recommended_doc">Recommended Doctor </string>
+    <string name="lbl_generate_report">Generate Report</string>
+    <string name="lbl_45">45</string>
+    <string name="msg_add_to_reading">Add to Reading List</string>
+    <string name="lbl_gender">Gender:</string>
+    <string name="msg_photos_people">Photos, People, Places...</string>
+    <string name="lbl_find_on_page">Find on Page</string>
+    <string name="msg_you_re_improvin">You\u2019re improving!</string>
+    <string name="msg_providing_the_b">Providing the best suited for your family.</string>
+    <string name="lbl_122">12</string>
+    <string name="lbl_david">David</string>
+    <string name="lbl_airdrop">AirDrop</string>
+    <string name="lbl_media_types">Media Types</string>
+    <string name="msg_home_remedy_fo">Home Remedy 
+for Pneumonia</string>
+    <string name="lbl_dr_c_hussain">Dr. C. Hussain</string>
+    <string name="msg_health_insuranc">Health Insurance</string>
+    <string name="msg_how_are_you_tod">How are you today?</string>
+    <string name="lbl_hospital">Hospital</string>
+    <string name="lbl_recents">Recents</string>
+    <string name="lbl_34">34</string>
+    <string name="lbl_35">35</string>
+    <string name="lbl_sign_in_with">Sign In with </string>
+    <string name="msg_add_to_favorite">Add to Favorites</string>
+    <string name="lbl_14_minutes">14 minutes</string>
+    <string name="lbl_portraits">Portraits</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_saved_report">Saved Report</string>
+    <string name="lbl_selfies">Selfies</string>
+    <string name="msg_type_a_message">Type a message...</string>
+    <string name="lbl8">&#x1002b3;</string>
+    <string name="lbl_youtube">YouTube</string>
+    <string name="lbl9">&#x100323;</string>
+    <string name="lbl_upload_image">Upload Image</string>
+    <string name="lbl6">&#x1003ac;</string>
+    <string name="lbl7">&#x10037a;</string>
+    <string name="lbl_pneumosense">PneumoSense</string>
+    <string name="lbl_life_insurance">Life Insurance</string>
+    <string name="lbl10">&#x100184;</string>
+    <string name="lbl11">&#x10034e;</string>
+    <string name="msg_dont_have_an_ac2">Dont have an account? </string>
+    <string name="lbl12">&#x1002a9;</string>
+    <string name="lbl13">|</string>
+    <string name="msg_cool_you_ll_b">Cool! You \u2018ll better soon</string>
+    <string name="lbl14">)</string>
+    <string name="lbl15">&#x100586;</string>
+    <string name="lbl16">&#x10025a;</string>
+    <string name="lbl17">&#x1002c2;</string>
+    <string name="lbl18">&#x1002ab;</string>
+    <string name="lbl_album">Album</string>
+    <string name="lbl_73_y"> 73 Y 
+</string>
+    <string name="lbl_flip">flip</string>
+    <string name="lbl_twitter">Twitter</string>
+    <string name="lbl_photos">Photos</string>
+    <string name="lbl_copy_link">Copy Link</string>
+    <string name="msg_complete_scan_r">Complete Scan Required!</string>
+    <string name="lbl_2_people">2 People</string>
+    <string name="msg_mr_tanmay_gupt">Mr. Tanmay Gupta</string>
+    <string name="lbl_message">Message</string>
+    <string name="lbl_12_45">12:45</string>
+    <string name="lbl_age">Age:</string>
+    <string name="lbl_use_photo">Use Photo</string>
+    <string name="msg_fortis_escorts">Fortis Escorts, NCR</string>
+    <string name="lbl_100">100</string>
+    <string name="lbl_42_y_male">42 Y, Male</string>
+    <string name="msg_you_ll_be_fine">You\u2019ll be fine soon!</string>
+    <string name="msg_you_should_rest">"You should rest first, don't push your body too much. Because if you force it, it will get worse and the effect will be everywhere"</string>
+    <string name="lbl_4_8">4.8</string>
+    <string name="lbl_telegram">Telegram</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_see_all">See All</string>
+    <string name="lbl_end">end</string>
+    <string name="lbl_photo_gallery">Photo Gallery</string>
+    <string name="lbl_sign_up"> Sign up</string>
+    <string name="msg_dont_have_an_ac">Dont have an account?  Sign up</string>
+    <string name="lbl_15">15</string>
+    <string name="msg_age_73_y_gend">Age: 73 Y 
+Gender: Male
+
+Positive Symptoms: 
+Cough, Fever, Chest Pain, Fatigue, Recent travel
+
+
+Report Diagnostics: 
+Viral Pneumonia (71%)</string>
+    <string name="msg_cure_pneumonia">Cure Pneumonia in less than 10 days
+with this effective stategy!</string>
+    <string name="lbl">&#x100150;</string>
+    <string name="lbl_skip_now">Skip now --&gt;</string>
+    <string name="lbl_choose">Choose</string>
+    <string name="lbl_done">Done</string>
+    <string name="lbl_dr_s_pathak">Dr. S. Pathak</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_photo">PHOTO</string>
+    <string name="lbl_search">Search</string>
+    <string name="lbl_1">1?</string>
+    <string name="lbl_whatsapp">WhatsApp</string>
+    <string name="lbl_hello_kunal">Hello, Kunal</string>
+    <string name="lbl_effects">effects</string>
+    <string name="lbl_albums">Albums</string>
+    <string name="msg_report_diagnost">Report Diagnostics: 
+</string>
+    <string name="lbl_8_42_am_12_feb">8:42 AM, 12 Feb</string>
+    <string name="msg_please_select_y">Please select your closest hospital facility</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_24x7">24x7</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="lbl_mute">mute</string>
+    <string name="lbl_dr_s_narayan">Dr. S. Narayan</string>
+    <string name="msg_your_health_our">Your Health
+Our Priority</string>
+    <string name="lbl_camera_off">Camera Off</string>
+    <string name="lbl_70">70</string>
+    <string name="lbl_messages">Messages</string>
+    <string name="lbl_71">71%</string>
+    <string name="lbl_08_00_16_00">08:00 - 16:00 </string>
+    <string name="lbl_71_b">71%, B</string>
+    <string name="lbl_ambulance">Ambulance</string>
+    <string name="msg_enter_your_emai">Enter your email and password</string>
+    <string name="lbl_screenshots">Screenshots</string>
+    <string name="msg_viral_pneumonia">Viral Pneumonia (</string>
+    <string name="msg_are_you_experie2">Are you experiencing chest pain?</string>
+    <string name="lbl_dr_n_singh">Dr. N. Singh</string>
+    <string name="msg_are_you_experie3">Are you experiencing fatigue/appetite loss?</string>
+    <string name="lbl_no2">NO</string>
+    <string name="msg_are_you_experie4">Are you experiencing nausea/vomiting?</string>
+    <string name="lbl_find_doctor">Find Doctor</string>
+    <string name="lbl_dr_t_ghosh">Dr. T. Ghosh</string>
+    <string name="msg_please_enter_valid_email">Please enter valid email</string>
+    <string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+    <string name="msg_camera_storage_permission">This Application need permission\n1.Camera permission to capture the image.\n2.Storage Access permission to save the captured image.</string>
+    <string name="lbl_gallery">Gallery</string>
+</resources>

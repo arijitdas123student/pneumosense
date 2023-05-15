@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listphotoFiveRowModel" type="com.arijitsapplication.app.modules.sharereport.data.model.ListphotoFiveRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearShareSheetto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <FrameLayout android:id="@+id/framePhotoAppIco"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_64pxv"
+            android:layout_marginEnd="@dimen/_1pxh" android:layout_width="@dimen/_64pxh">
+            <FrameLayout android:id="@+id/frameAvatar"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_63pxv"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_width="@dimen/_63pxh" style="@style/groupStylecornerRadius_8">
+                <ImageView android:id="@+id/imagePhotoFive"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_63pxh"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="@dimen/_62pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_31pxh}"
+                    imageRes="@{@drawable/img_photo_22x22}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_photo_22x22"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameAppIcon"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_20pxh" style="@style/groupStylecornerRadius_9">
+                <ImageView android:id="@+id/imageIconTwo"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_width="@dimen/_19pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_icon_20x19"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_icon_20x19"/>
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtLabelTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.0"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{listphotoFiveRowModel.txtLabelTwo}"
+            style="@style/txtSFProTextregular11_1" tools:text="@string/lbl_david"/>
+    </LinearLayout>
+</layout>

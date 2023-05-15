@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="photoClickedViewVM" type="com.arijitsapplication.app.modules.photoclickedview.data.viewmodel.PhotoClickedViewVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearPhotoClickedV"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900">
+        <ImageView android:id="@+id/imageRectangleTwelve"
+            android:layout_height="@dimen/_507pxv"
+            android:layout_marginTop="@dimen/_102pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle10_124x124}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle10_124x124"/>
+        <LinearLayout android:id="@+id/linearRowretake"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylegray_900">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRetake"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_58pxv"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_weight="0.4" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{photoClickedViewVM.photoClickedViewModel.txtRetake}"
+                style="@style/txtSFProTextregular18_1" tools:text="@string/lbl_retake"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUsePhoto"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_58pxv"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_182pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_weight="0.6" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{photoClickedViewVM.photoClickedViewModel.txtUsePhoto}"
+                style="@style/txtSFProTextregular18_1" tools:text="@string/lbl_use_photo"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="findDocWebviewVM" type="com.arijitsapplication.app.modules.finddocwebview.data.viewmodel.FindDocWebviewVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackdone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumndone"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:contentInsetStart="0dp" style="@style/groupStylegray_50_d1">
+                <LinearLayout android:id="@+id/linearRowdone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDone"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.42"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.02"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:singleLine="true"
+                        android:text="@{findDocWebviewVM.findDocWebviewModel.txtDone}"
+                        style="@style/txtSFProDisplayregular16" tools:text="@string/lbl_done"/>
+                    <LinearLayout android:id="@+id/linearRowaa"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginStart="@dimen/_249pxh"
+                        android:layout_weight="0.58"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAA"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_weight="0.56"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{findDocWebviewVM.findDocWebviewModel.txtAA}"
+                            style="@style/txtSFProTextregular15" tools:text="@string/lbl"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtX"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginStart="@dimen/_17pxh"
+                            android:layout_weight="0.44"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{findDocWebviewVM.findDocWebviewModel.txtX}"
+                            style="@style/txtSFProTextregular15" tools:text="@string/lbl2"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:id="@+id/linearToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_654pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylegray_50_e5">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_39pxv"
+                    android:layout_marginStart="@dimen/_22pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.18"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{findDocWebviewVM.findDocWebviewModel.txtFive}"
+                    style="@style/txtSFProTextregular21" tools:text="@string/lbl3"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSix"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_39pxv"
+                    android:layout_marginStart="@dimen/_92pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.18"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{findDocWebviewVM.findDocWebviewModel.txtSix}"
+                    style="@style/txtSFProTextregular21" tools:text="@string/lbl4"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSeven"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_41pxv"
+                    android:layout_marginStart="@dimen/_88pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{findDocWebviewVM.findDocWebviewModel.txtSeven}"
+                    style="@style/txtSFProTextregular21_1" tools:text="@string/lbl5"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEight"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_39pxv"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_82pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.34"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{findDocWebviewVM.findDocWebviewModel.txtEight}"
+                    style="@style/txtSFProTextregular21_1" tools:text="@string/lbl6"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageIMG01441"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_img01441}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_img01441"/>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="scanQuestionSeventeenVM" type="com.arijitsapplication.app.modules.scanquestionseventeen.data.viewmodel.ScanQuestionSeventeenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackscanReport"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_6pxv"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnscanReport"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearScanQuestionS"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnScanReport"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_scan_report"
+                    android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_scan_report"/>
+                <LinearLayout android:gravity="end"
+                    android:id="@+id/linearColumntime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_37pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnareyouexperie"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_117pxh"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyleindigo_A200cornerRadius">
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtAreyouexperie"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_9pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:letterSpacing="0.0"
+                            android:lineSpacingExtra="@dimen/_6pxh"
+                            android:text="@{scanQuestionSeventeenVM.scanQuestionSeventeenModel.txtAreyouexperie}"
+                            style="@style/txtInterregular12" tools:text="@string/msg_are_you_experie4"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTime"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_117pxh"
+                        android:layout_marginStart="@dimen/_117pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="wrap_content"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:singleLine="true"
+                        android:text="@{scanQuestionSeventeenVM.scanQuestionSeventeenModel.txtTime}"
+                        style="@style/txtMulishsemibold12" tools:text="@string/lbl_12_10"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFrameTwentySeven"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_3pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@{scanQuestionSeventeenVM.scanQuestionSeventeenModel.txtFrameTwentySeven}"
+                        style="@style/txtSolidRounded" tools:text="@string/lbl_no"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_198pxh"
+                        android:layout_marginStart="@dimen/_117pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:singleLine="true"
+                        android:text="@{scanQuestionSeventeenVM.scanQuestionSeventeenModel.txtTimeOne}"
+                        style="@style/txtMulishsemibold12" tools:text="@string/lbl_12_10"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnhaveyouvisite"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_117pxh"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyleindigo_A200cornerRadius">
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtHaveyouvisite"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_11pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_11pxv"
+                            android:layout_width="match_parent"
+                            android:letterSpacing="0.0"
+                            android:lineSpacingExtra="@dimen/_6pxh"
+                            android:text="@{scanQuestionSeventeenVM.scanQuestionSeventeenModel.txtHaveyouvisite}"
+                            style="@style/txtInterregular12" tools:text="@string/msg_have_you_visite"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_117pxh"
+                        android:layout_marginStart="@dimen/_117pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:singleLine="true"
+                        android:text="@{scanQuestionSeventeenVM.scanQuestionSeventeenModel.txtTimeTwo}"
+                        style="@style/txtMulishsemibold12" tools:text="@string/lbl_12_10"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameBottombar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" style="@style/groupStylewhite_6">
+                <LinearLayout android:id="@+id/linearRowsend"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_35pxv"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/linearColumnlightbulb"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                        <LinearLayout android:id="@+id/linearRowicon"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal" style="@style/groupStylecornerRadius_4">
+                            <LinearLayout
+                                android:id="@+id/linearRowlightbulb"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_13pxv"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_weight="0.88"
+                                android:layout_width="0dp" android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/imageLightbulb"
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_22pxh"
+                                    android:layout_marginStart="@dimen/_9pxh"
+                                    android:layout_width="@dimen/_22pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_lightbulb"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_lightbulb"/>
+                                <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtTypeamessage"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_2pxv"
+                                    android:layout_marginEnd="@dimen/_2pxh"
+                                    android:layout_marginStart="@dimen/_2pxh"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_weight="0.82"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_3pxh"
+                                    android:singleLine="true"
+                                    android:text="@{scanQuestionSeventeenVM.scanQuestionSeventeenModel.txtTypeamessage}"
+                                    style="@style/txtInterregular12_2" tools:text="@string/msg_type_a_message"/>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/imageIcon"
+                                android:layout_gravity="center"
+                                android:layout_height="@dimen/_20pxh"
+                                android:layout_marginBottom="@dimen/_14pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_114pxh"
+                                android:layout_marginTop="@dimen/_14pxv"
+                                android:layout_width="@dimen/_19pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_icon"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_icon"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/frameButtonIcon"
+                        android:layout_height="@dimen/_48pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_width="@dimen/_48pxh" style="@style/groupStyleindigo_2">
+                        <ImageView android:id="@+id/imageSend"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_16pxh"
+                            android:layout_marginBottom="@dimen/_15pxv"
+                            android:layout_marginTop="@dimen/_15pxv"
+                            android:layout_width="@dimen/_19pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_send"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_send"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageBackground"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_709pxv"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_background"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_background"/>
+    </FrameLayout>
+</layout>

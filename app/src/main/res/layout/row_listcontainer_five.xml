@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listcontainerFiveRowModel" type="com.arijitsapplication.app.modules.message.data.model.ListcontainerFiveRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowcontainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylecornerRadius_2">
+        <FrameLayout android:id="@+id/frameStackcontainer"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_width="@dimen/_56pxh" style="@style/groupStylegreen_1">
+            <ImageView android:id="@+id/imageContainerFive"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="@dimen/_23pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_container_3"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_container_3"/>
+            <View
+                android:background="@drawable/rectangle_bg_green_a200_99_radius_9_5"
+                android:id="@+id/viewContainerOneFive"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_17pxh"/>
+            <ImageView android:id="@+id/imagePortraitofasiTwo"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_53pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="@dimen/_42pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_portraitofasi_50x42"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_portraitofasi_50x42"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumndrnsingh"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.83" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowdrnsingh"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDrNSingh"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.72"
+                    android:layout_width="0dp"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{listcontainerFiveRowModel.txtDrNSingh}"
+                    style="@style/txtInterbold14" tools:text="@string/lbl_dr_n_singh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_160pxh"
+                    android:layout_weight="0.28"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{listcontainerFiveRowModel.txtTime}"
+                    style="@style/txtInterregular12_1" tools:text="@string/lbl_12_45"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtYoureimprovin"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{listcontainerFiveRowModel.txtYoureimprovin}"
+                style="@style/txtInterregular14_1" tools:text="@string/msg_you_re_improvin"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

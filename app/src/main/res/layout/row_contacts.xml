@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="contactsRowModel" type="com.arijitsapplication.app.modules.message.data.model.ContactsRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackcontainer"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_56pxh" style="@style/groupStylegreen_1">
+        <ImageView android:id="@+id/imageContainer"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_9pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="@dimen/_23pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_container_9x23"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_container_9x23"/>
+        <View
+            android:background="@drawable/rectangle_bg_green_a200_99_radius_9_5"
+            android:id="@+id/viewContainerOne"
+            android:layout_gravity="bottom|end"
+            android:layout_height="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_17pxh"/>
+        <ImageView android:id="@+id/imageAsianmaledoct"
+            android:layout_gravity="bottom|center"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_38pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_asianmaledoct"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_asianmaledoct"/>
+        <View
+            android:background="@drawable/rectangle_bg_green_500_border_white_a700_radius_8"
+            android:id="@+id/viewBadge"
+            android:layout_gravity="bottom|end"
+            android:layout_height="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_16pxh"/>
+    </FrameLayout>
+</layout>

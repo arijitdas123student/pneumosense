@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="uploadSelectedViewVM" type="com.arijitsapplication.app.modules.uploadselectedview.data.viewmodel.UploadSelectedViewVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameUploadSelected"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleblack_900">
+        <ImageView android:id="@+id/imageRectangleTwelve"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_439pxv"
+            android:layout_marginBottom="@dimen/_155pxv"
+            android:layout_marginTop="@dimen/_155pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle10_124x124}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle10_124x124"/>
+        <FrameLayout android:id="@+id/frameStackgrouptwentyone"
+            android:layout_gravity="start"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageGroupTwentyOne"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group21"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group21"/>
+            <LinearLayout android:id="@+id/linearRowcancel"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_33pxv"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCancel"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.47"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{uploadSelectedViewVM.uploadSelectedViewModel.txtCancel}"
+                    style="@style/txtSFProTextregular18_1" tools:text="@string/lbl_cancel"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtChoose"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_204pxh"
+                    android:layout_weight="0.53"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{uploadSelectedViewVM.uploadSelectedViewModel.txtChoose}"
+                    style="@style/txtSFProTextregular18_1" tools:text="@string/lbl_choose"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
