@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="callerIdRowModel" type="com.arijitsapplication.app.modules.callerid.data.model.CallerIdRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearDecline"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylewhite_A700_28cornerRadius">
+        <FrameLayout android:id="@+id/frameStackcreatefromfra"
+            android:layout_height="@dimen/_40pxv" android:layout_width="@dimen/_36pxh">
+            <View
+                android:background="@drawable/rectangle_bg_white_a700_28_radius_25"
+                android:id="@+id/viewCreatefromfra"
+                android:layout_gravity="top|center"
+                android:layout_height="@dimen/_50pxh" android:layout_width="@dimen/_50pxh"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start" android:id="@+id/txtNine"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_3pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{callerIdRowModel.txtNine}"
+                style="@style/txtSFProTextlight24" tools:text="@string/lbl7"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtEffects"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{callerIdRowModel.txtEffects}"
+            style="@style/txtSFProTextregular11" tools:text="@string/lbl_effects"/>
+    </LinearLayout>
+</layout>

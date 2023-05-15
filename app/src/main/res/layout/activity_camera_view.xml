@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cameraViewVM" type="com.arijitsapplication.app.modules.cameraview.data.viewmodel.CameraViewVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCameraView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900">
+        <ImageView android:id="@+id/imageReply"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_12pxh"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_width="@dimen/_11pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_reply"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_reply"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnrectangletwelve"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_74pxv"
+            android:layout_marginTop="@dimen/_60pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackrectangletwelve"
+                android:layout_height="@dimen/_507pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageRectangleTwelve"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_rectangle10_124x124}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle10_124x124"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGroupNineteen"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_168pxh"
+                    android:layout_marginStart="@dimen/_168pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingStart="@dimen/_12pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@{cameraViewVM.cameraViewModel.txtGroupNineteen}"
+                    style="@style/txtRoundedOutline" tools:text="@string/lbl_1"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtPHOTO"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{cameraViewVM.cameraViewModel.txtPHOTO}"
+                style="@style/txtSFProTextregular13" tools:text="@string/lbl_photo"/>
+            <LinearLayout android:id="@+id/linearRowcamera"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowcancel"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCancel"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_23pxv"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_weight="0.45"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{cameraViewVM.cameraViewModel.txtCancel}"
+                        style="@style/txtSFProTextregular18_1" tools:text="@string/lbl_cancel"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnellipsetwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_71pxh"
+                        android:layout_weight="0.55"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylewhite_10">
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_29"
+                            android:id="@+id/viewEllipseTwo"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_58pxh"
+                            android:layout_marginHorizontal="@dimen/_6pxh"
+                            android:layout_marginVertical="@dimen/_6pxv" android:layout_width="@dimen/_58pxh"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageCamera"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_marginBottom="@dimen/_21pxv"
+                    android:layout_marginStart="@dimen/_92pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="@dimen/_35pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_camera"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_camera"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

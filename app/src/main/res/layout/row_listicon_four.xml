@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listiconFourRowModel" type="com.arijitsapplication.app.modules.sharereport.data.model.ListiconFourRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearShareSheetto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <FrameLayout android:id="@+id/frameStackicon"
+            android:layout_height="@dimen/_60pxv" android:layout_width="@dimen/_60pxh">
+            <ImageView android:id="@+id/imageIconFour"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_60pxh"
+                android:layout_width="@dimen/_60pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_icon_20x19}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_icon_20x19"/>
+            <ImageView android:id="@+id/imageImageFive"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_60pxh"
+                android:layout_width="@dimen/_60pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_13pxh}"
+                imageRes="@{@drawable/img_image5}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image5"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLabelFour"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_2pxh"
+            android:layout_marginStart="@dimen/_3pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.0"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{listiconFourRowModel.txtLabelFour}"
+            style="@style/txtSFProTextregular11_1" tools:text="@string/lbl_whatsapp"/>
+    </LinearLayout>
+</layout>
